@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.panel {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 350px;
+  height: 100vh;
+  margin: 20px auto;
+  background-image: url("./img/notes.jpg");
+  background-size: 350px;
+  background-repeat: no-repeat;
+}
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  background-color: transparent;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+
+input {
+  padding-left: 10px;
+}
+
+.input::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.inputZakup {
+  float: left;
+  color: black;
+  font-size: 14px;
+  height: 30px;
+  width: 73%;
+}
+
+.zapisz {
+  float: left;
+  height: 30px;
+  font-size: 14px;
+  padding: 0 10px;
+  width: 25%;
+}
+
+.linia {
+  display: block;
+  width: 85%;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.wpisy {
+  display: block;
+  width: 95%;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.listaZapupow {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 25px 25px;
+      grid-template-columns: auto 25px 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: start;
+  gap: 0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+.zawartoscListaZakupow {
+  width: 100%;
+}
+
+.kosz, .edycja {
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.stopka {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */

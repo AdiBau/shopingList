@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <title>Login AdiBau</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./src/style.css">
+  <!-- <link href="./plikiStronaG/fonts/css/all.css" rel="stylesheet"> -->
+  <link rel="shortcut icon" href="./src/logoAdiBau.png" type="image/x-icon">
+
+</head>
+
+
+<body>
+
+  <div class="container">
+
+    <div class="wrap-login" id="login-box">
+
+      <form onsubmit=wysliLogin() class="login-form logowanie" id="main-form" autocomplete="off" formnovalidate>
+        <h1>Zaloguj się do Shoping list</h1>
+        <div class="field" id="field-wrap">
+
+          <input type="text" name="name" id="name" placeholder="Wprowadź Nazwe">
+          <label for="name">Wprowadź Nazwe</label>
+          <span class="underline" id="under-name"></span>
+
+
+          <input type="number" name="pin" id="pin" placeholder="Wprowadź PIN" required>
+          <label for="pin">PIN</label>
+          <span class="underline" id="under-pin"></span>
+
+        </div>
+        <span class="line" id="line"></span>
+        <div class="pinErr" id="pin-error"></div>
+
+
+        <p class="ok loginOK" id="ok"> OK </p>
+
+        <div class="wynik"></div>
+        <div class="btns">
+          <a href="#" class="login-btn" id="login">Login</a>
+          <a href="#" class="register-btn" id="register">Rejestracja</a>
+          <div class="slide-btn" id="slide"></div>
+        </div>
+
+      </form>
+      <!-- gggggggggggggggggggggggggggggggggggggggg -->
+      <form onsubmit=wysliRegister() method="post" class="login-form register visibleNone" id="main-form"
+        autocomplete="off" formnovalidate>
+        <h1>Nowe konto do Shoping list</h1>
+        <div class="field" id="field-wrap2">
+          <!-- <div class="name"> -->
+          <input type="text" name="name2" id="name2" placeholder="Nazwa">
+          <label for="name2">Nazwa</label>
+          <span class="underline" id="under-name2"></span>
+
+          <input type="number" name="pin" id="pin2" placeholder="Wprowadź PIN" required>
+          <label for="pin2">PIN</label>
+          <span class="underline" id="under-pin2"></span>
+        </div>
+        <span class="line" id="line"></span>
+        <div class="pinErr" id="pin-error2"></div>
+
+
+        <p class="ok registerOK" id="ok"> OK </p>
+        <div class="wynik2"></div>
+
+        <div class="btns">
+
+          <a href="#" class="login-btn2 okA" id="login2">Login</a>
+          <a href="#" class="register-btn2" id="register2">Rejestracja</a>
+          <div class="slide-btn2" id="slide2"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- dsssssssssssss -->
+  <script src="//code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+  <script src="./src/js/main3.js"></script>
+
+  <footer>© Copyright <a href="https://www.adibau.pl">AdiBau 2019</a>
+  </footer>
+</body>
+
+</html>

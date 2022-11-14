@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true,
+        "jquery": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest"
+    },
+    "plugins": [
+        "react",
+        "import",
+        "n",
+        "promise"
+    ],
+    "rules": {
+        "no-console":"off",
+        "no-var": "error",
+        "no-else-return":"warn",
+        "no-multiple-empty-lines":"warn",
+        "no-multi-spaces":"warn"
+  }
+
+}
